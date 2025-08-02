@@ -1,0 +1,207 @@
+/*  GLOBAL STYLES  */
+
+/* Reset default browser styles for all elements */
+* {
+  margin: 0; /* remove default margin */
+  padding: 0; /* remove default padding */
+  box-sizing: border-box; /* includes padding & border in element width */
+  font-family: 'Poppins', sans-serif; /* apply Google Font for a clean look */
+}
+
+/* Body default styling */
+body {
+  background: #f5f5f5; /* light gray background */
+  color: #333; /* dark gray text color */
+  line-height: 1.6; /* improves text readability */
+}
+
+/*  NAVBAR  */
+
+/* Navbar container styling */
+header {
+  background: #222; /* dark background for navbar */
+  padding: 15px 0; /* space above & below navbar */
+  position: sticky; /* navbar stays fixed at the top on scroll */
+  top: 0; /* stick exactly at top */
+}
+
+/* A reusable container class to center content */
+.container {
+  width: 90%; /* take 90% of screen width */
+  max-width: 1100px; /* but don’t go beyond 1100px */
+  margin: auto; /* center horizontally */
+  display: flex; /* flexbox to arrange logo & nav horizontally */
+  justify-content: space-between; /* space between logo and menu */
+  align-items: center; /* vertically center items */
+}
+
+/* Logo text style */
+.logo {
+  color: white; /* white text for logo */
+  font-size: 1.5rem; /* slightly larger */
+}
+
+/* Navigation menu styling */
+nav ul {
+  list-style: none; /* remove bullets from list */
+  display: flex; /* arrange menu items in a row */
+}
+
+/* Space between each nav menu item */
+nav ul li {
+  margin-left: 20px;
+}
+
+/* Navbar links style */
+nav ul li a {
+  color: white; /* white text color */
+  text-decoration: none; /* remove underline */
+  font-weight: 500; /* medium-bold font */
+}
+
+/* Hover effect on navbar links */
+nav ul li a:hover {
+  color: #4da3ff; /* light blue when hovered */
+}
+
+/*  HERO SECTION  */
+
+.hero {
+  height: 90vh; /* 90% of viewport height */
+  /* Background with dark overlay + image */
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('abhyas.jpg') center/cover no-repeat;
+  color: white; /* white text on dark background */
+  display: flex; /* flexbox to center content */
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  text-align: center; /* center text alignment */
+  flex-direction: column; /* stack elements vertically */
+}
+
+/* Smaller text in hero section */
+.hero h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px; /* space below text */
+}
+
+/* Main name/title in hero */
+.hero h1 {
+  font-size: 3rem; /* big bold name */
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Description in hero section */
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px; /* space before button */
+}
+
+/* Common button style */
+.btn {
+  display: inline-block; /* allows padding & margin */
+  padding: 10px 20px; /* space inside button */
+  background: #4da3ff; /* light blue background */
+  color: white; /* white text */
+  text-decoration: none; /* remove underline */
+  border-radius: 5px; /* rounded corners */
+  transition: 0.3s; /* smooth hover effect */
+}
+
+/* Button hover effect */
+.btn:hover {
+  background: #007bff; /* darker blue on hover */
+}
+
+/*  ABOUT SECTION  */
+
+.about {
+  background: #fff; /* white background for contrast */
+  padding: 60px 0; /* space above & below */
+}
+
+/* About content layout (image + text) */
+.about-content {
+  display: flex; /* arrange image & text in a row */
+  align-items: center; /* vertically align */
+  justify-content: space-between; /* equal space between */
+  flex-wrap: wrap; /* wrap for smaller screens */
+}
+
+/* About image styling */
+.about-img img {
+  width: 280px; /* fixed image size */
+  border-radius: 10px; /* rounded edges */
+}
+
+/* About text styling */
+.about-text {
+  flex: 1; /* take up remaining width */
+  margin-left: 30px; /* spacing from image */
+}
+
+/* About heading */
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Paragraph spacing in About section */
+.about-text p {
+  margin-bottom: 15px;
+}
+
+/*  SKILLS SECTION  */
+
+.skills {
+  background: #f0f0f0; /* light gray background */
+  padding: 60px 0; /* space above & below */
+  text-align: center; /* center-align text */
+}
+
+/* Skills section title */
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Skill cards layout */
+.skill-list {
+  display: flex; /* arrange in a row */
+  justify-content: center; /* center horizontally */
+  flex-wrap: wrap; /* wrap to new line if screen is small */
+}
+
+/* Individual skill card styling */
+.skill-card {
+  background: white; /* white background for cards */
+  padding: 15px 30px; /* inner spacing */
+  margin: 10px; /* space between cards */
+  border-radius: 8px; /* rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* soft shadow */
+  font-weight: bold; /* bold skill text */
+}
+
+/*   CONTACT SECTION  */
+
+.contact {
+  background: white; /* white background */
+  padding: 50px 0; /* spacing */
+  text-align: center; /* center-align text */
+}
+
+/* Contact details text style */
+.contact p {
+  font-size: 1.1rem; /* slightly bigger font */
+  margin-bottom: 10px; /* space between details */
+}
+
+/*  FOOTER  */
+
+footer {
+  background: #222; /* dark footer */
+  color: white; /* white text */
+  text-align: center; /* center text */
+  padding: 15px; /* small spacing */
+}
