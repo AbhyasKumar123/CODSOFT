@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calculator</title>
+
+  <!-- Linking CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Calculator container -->
+  <div class="calculator">
+
+    <!-- Display screen where results & input will show -->
+    <input type="text" id="display" disabled>
+
+    <!-- Buttons section -->
+    <div class="buttons">
+      <!-- Clear Button -->
+      <button onclick="clearDisplay()">C</button>
+      
+      <!-- Operators -->
+      <button onclick="appendValue('/')">/</button>
+      <button onclick="appendValue('*')">×</button>
+      <button onclick="appendValue('-')">−</button>
+
+      <!-- Numbers & + operator -->
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button onclick="appendValue('+')">+</button>
+
+      <!-- More numbers & = button -->
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+
+      <!-- Equal button calculates the result -->
+      <button onclick="calculateResult()" class="equal">=</button>
+
+      <!-- Remaining numbers -->
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+
+      <!-- Zero spans 2 columns -->
+      <button onclick="appendValue('0')" class="zero">0</button>
+      
+      <!-- Decimal point -->
+      <button onclick="appendValue('.')">.</button>
+    </div>
+  </div>
+
+  <!-- Linking JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
